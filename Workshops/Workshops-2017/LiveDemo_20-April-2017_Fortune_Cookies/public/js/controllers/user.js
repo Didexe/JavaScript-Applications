@@ -1,5 +1,6 @@
 import * as data from 'data';
 import { load as loadTemplate } from 'templates';
+// import 'cryptojs';
 
 const $appContainer = $('#app-container');
 
@@ -7,49 +8,39 @@ const LOCALSTORAGE_AUTH_KEY_NAME = 'authkey';
 const AUTH_KEY_HEADER = 'x-auth-key';
 
 export function get(params) {
-  const { category } = params;
-
-  loadTemplate('auth')
-    .then(template => {
-      $appContainer.html(template());
-    });
+    const { category } = params;
 }
 
-export function login() {
-  const username = $('#input-username').val();
-  const password = $('#input-password').val();
-  const passHash = password; // HASH ME
+loadTemplate('auth')
+    .then(template => { 
+        $appContainer.html(template())
+});
 
-  data.login(username, passHash)
-    .then(
-        result => {
-          localStorage.setItem(LOCALSTORAGE_AUTH_KEY_NAME, result.result.authKey);
-          $('#auth-btn').addClass('hidden');
-          $('#signout-btn').removeClass('hidden');
-          toastr.success(`Hi, ${username}`);
-          location.href = '#/home';
+// console.log(Crypto)
+export function login() {
+    const username = $('#input-username').val();
+    const password = $('#input-password').val();
+    const passHash = password; //hash me
+    
+    data.login(username, passHash)
+        .then(
+            result => { console.log(result);
+            location.href = '#/home';
         },
-        errorMsg => toastr.error(errorMsg));
+            errorMsg => console.log(errorMsg));
 }
 
 export function register() {
-  const username = $('#input-username').val();
-  const password = $('#input-password').val();
-  const passHash = password; // HASH ME
-
-  data.register(username, passHash)
-    .then(
-        result => {
-          toastr.success(`User ${username} registered successfully`);
-          login()
-        },
-        errorMsg => toastr.error(errorMsg));
+    const username = $('#input-username').val();
+    const password = $('#input-password').val();
+    const passHash = password; //hash me
+    
+    data.register(username, passHash)
+        .then(
+            result => console.log(result),
+            errorMsg => console.log(errorMsg));
 }
 
 export function logout() {
-  localStorage.removeItem(LOCALSTORAGE_AUTH_KEY_NAME);
-  $('#auth-btn').removeClass('hidden');
-  $('#signout-btn').addClass('hidden');
-  //toastr.success('Logged out');
-  location.href = '#/home';
+
 }

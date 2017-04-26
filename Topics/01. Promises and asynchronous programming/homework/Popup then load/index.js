@@ -22,6 +22,6 @@ promisePopup().then((result) => {
     return promiseRedirect(result);
 }).then((result) => {
    console.log(result + ' end');
-}).catch(function(result) {
-    console.log(result)
+}).catch(function(error) {
+    console.log(error)
 });

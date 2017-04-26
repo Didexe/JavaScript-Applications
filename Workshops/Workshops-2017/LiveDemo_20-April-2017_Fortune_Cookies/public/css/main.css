@@ -1,19 +1,7 @@
 .list-cookie img {
-  width: 100px;
-}
-
-.hidden {
-  display: none;
+    width: 100px;
 }
 
 header .btn {
-  float: right;
-}
-
-header {
-  padding: 10px;
-}
-
-.nav li {
-  diplay: inline;
+    float: right;
 }
