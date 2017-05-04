@@ -1,0 +1,64 @@
+{{#unless result}}
+<h4>There are no todos in your list</h4>
+  {{else}}
+  {{#each result}}
+  {{#if state}}
+  <a href="#/todos/{{id}}" class="todo"><input type="checkbox" id="{{id}}" name="todo" value="{{text}}" checked><p class="text done"> {{text}}</p>
+  <button type="button" class="btn btn-default editTodo btn-xs" data-toggle="modal" data-target="#editTodo">Edit</button></a><br>
+  {{else}}
+  <a href="#/todos/{{id}}" class="todo"><input type="checkbox" id="{{id}}" name="todo" value="{{text}}"><p class="text"> {{text}}</p>
+  <button type="button" class="btn btn-default editTodo btn-xs" data-toggle="modal" data-target="#editTodo">Edit</button></a><br>
+  {{/if}}
+  {{/each}}
+{{/unless}}
+
+{{!--<button type="button" class="btn btn-default" onclick="showForm()">Add new ToDo</button>
+ <div id="modal-body" class="hidden">
+        <input id="todo-text" type="text" name="todoText" value="ToDo">
+        <input id="todo-category" type="text" name="todoCategory" value="Category">
+</div>
+<div id="modal-footer" class="hidden">
+        <button type="button" class="btn btn-default" onclick="hideForm()">Cancel</button>
+        <button type="button" class="btn btn-default" id="btn-create-todo">Create</button>--}}
+        {{!--<a type="button" class="btn btn-default" href="#/createTodo">Create</a>--}}
+</div>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Add new ToDo</button>
+{{!--Add new ToDo pop-up--}}
+<div class="modal fade" id="myModal" role="dialog" data-backdrop="false">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Create new ToDo</h4>
+        </div>
+        <div class="modal-body">
+          <input id="todo-text" type="text" name="todoText" value="ToDo">
+          <input id="todo-category" type="text" name="todoCategory" value="Category">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <a type="button" class="btn btn-default" data-confirm="modal" id="btn-create-todo">Create</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{{!--Edit ToDo pop-up--}}
+  <div class="modal fade" id="editTodo" role="dialog" data-backdrop="false">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Edit ToDo</h4>
+        </div>
+        <div class="modal-body">
+          <input type="checkbox" id="todo-state"> Change state<br>
+          <br>
+          <input id="todo-text" type="text" name="todoText" value="Enter new text">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <a type="button" class="btn btn-default" data-confirm="modal" id="btn-edit-todo">OK</a>
+        </div>
+      </div>
+    </div>

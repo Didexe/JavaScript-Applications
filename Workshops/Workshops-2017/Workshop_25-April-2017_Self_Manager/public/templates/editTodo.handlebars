@@ -1,0 +1,20 @@
+{{!--</div>--}}
+{{!--<button type="button" id="editTodo" class="btn btn-default hidden" data-toggle="modal" data-target="#editTodo">Edit ToDo</button>--}}
+
+<div class="modal fade" id="editTodo" role="dialog" data-backdrop="false">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Edit ToDo</h4>
+        </div>
+        <div class="modal-body">
+          <input id="todo-text" type="text" name="todoText" value="Enter">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <a type="button" class="btn btn-default" data-confirm="modal" id="btn-edit-todo">OK</a>
+        </div>
+      </div>
+    </div>
+  {{!--</div>--}}

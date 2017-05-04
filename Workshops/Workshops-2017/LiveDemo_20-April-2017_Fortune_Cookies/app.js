@@ -9,7 +9,7 @@ var app = express();
 app.use(bodyParser.json());
 
 app.use(express.static('public'));
-app.use('/libs', express.static('node_modules'));
+app.use('/node_modules', express.static('node_modules'));
 
 require('./utils/authorize-user')(app, db);
 

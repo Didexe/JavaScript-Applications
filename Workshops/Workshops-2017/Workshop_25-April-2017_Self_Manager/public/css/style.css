@@ -1,0 +1,53 @@
+
+.container {
+    width: 100px;
+    min-height: 200px;
+    /*border: 1px grey solid;*/
+    display: inline-block;
+    /*clear: left;*/
+}
+
+.hidden {
+    display: none;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+p {
+    display: inline-block;
+}
+
+.todo {
+    display: block;
+    max-width: 400px;
+    height: 40px;
+    background-color: gainsboro;
+    padding: 5px;
+}
+
+.btn-xs {
+    float: right;
+}
+
+.event {
+    display: block;
+    max-width: 400px;
+    height: auto;
+    background-color: gainsboro;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.event span {
+    font-weight: bold;
+}
+
+ul {
+    text-decoration: none;
+}
+
+h3 {
+    margin-left: 20px;
+}

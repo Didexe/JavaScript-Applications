@@ -1,0 +1,26 @@
+{
+  "name": "self-manager",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Daniel Petrov"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Didexe/JavaScript-Applications",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "system-bower": "^0.2.3",
+    "systemjs": "*",
+    "navigo": "^4.7.0"
+  }
+}

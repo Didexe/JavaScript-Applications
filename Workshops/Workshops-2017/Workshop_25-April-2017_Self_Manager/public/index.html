@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ToDo App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <ul class="nav navbar-nav">
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/todos">My ToDo List</a></li>
+                <li><a href="#/events">My Events List</a></li>
+            </ul>
+        <input id="input-username" class="input"/>
+        <input id="input-password" class="input" type="password" />
+        <a id="btn-login" class="btn btn-success" href="#/login">Login</a>
+        <a id="btn-register" class="btn btn-success" href="#/register">Register</a>
+        <a id="btn-logout" class="btn btn-danger hidden" href="#/logout">Log out</a>
+        </header>
+        <div id="container" class="container"></div>
+    </body>
+    <script src="libs/systemjs/dist/system.js"></script>
+    <script src="/js/system-config.js"></script>
+    <script src="/bower_components/navigo/lib/navigo.min.js"></script>
+    <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+</html>
+

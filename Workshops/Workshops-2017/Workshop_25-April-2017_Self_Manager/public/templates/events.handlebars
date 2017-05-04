@@ -1,0 +1,46 @@
+{{#unless result}}
+<h4> You don't have any events yet. You can add some ...</h4>
+{{else}}
+
+{{#each result}}
+<a href="#/events/{{id}}" class="event"> 
+<h3>{{title}}</h3>
+    <ul>
+        <li>
+            <p><span>Description:</span> {{description}}</p>
+        </li>
+        <li>
+            <p><span>Due date:</span> {{date}}</p>
+        </li>
+        <li>
+            <p><span>Category:</span> {{category}}</p>
+        </li>
+    </ul>
+</a>
+{{/each}}
+
+{{/unless}}
+
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Add new Event</button>
+
+<div class="modal fade" id="myModal" role="dialog" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Create new Event</h4>
+        </div>
+        <div class="modal-body">
+          <input id="event-title" type="text" name="event" value="Event Title">
+		      <input id="event-description" type="text" name="event" value="Event Description">
+          <input id="event-category" type="text" name="event" value="Event Category">
+          <input id="event-date" type="text" name="event" value="Event Date mm/dd/yyyy">
+		      <input id="event-users" type="text" name="event" value="Event esers comma separated">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <a type="button" class="btn btn-default" data-confirm="modal" id="btn-create-event">Create</a>
+        </div>
+      </div>
+    </div>
+  </div>

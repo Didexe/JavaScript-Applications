@@ -6,43 +6,7 @@
       "usernameLower": "doncho",
       "authKey": "undefined+tusvd@Kh_@ixbA*Q$fvLmq(CJJmu*DN%E^i@OUr&eoAJn!*uak",
       "id": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
-      "events": [
-        {
-          "id": 449037,
-          "title": "Test",
-          "category": "Work",
-          "description": "",
-          "date": "2015-09-08T23:00:00.000Z",
-          "creatorId": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
-          "users": [
-            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
-            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7"
-          ]
-        },
-        {
-          "id": 449037,
-          "title": "Test",
-          "category": "Work",
-          "description": "",
-          "date": "2015-09-08T23:00:00.000Z",
-          "creatorId": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
-          "users": [
-            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
-            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7"
-          ]
-        },
-        {
-          "id": 792579,
-          "title": "Test",
-          "category": "Free time",
-          "description": "",
-          "date": "2015-09-17T23:00:00.000Z",
-          "creatorId": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
-          "users": [
-            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7"
-          ]
-        }
-      ],
+      "events": [],
       "todos": [
         {
           "id": 27882,
@@ -63,7 +27,21 @@
       "passHash": "6edbb5c948d25789eccdfb37b70ff7f728f49786",
       "usernameLower": "cuki",
       "authKey": "undefinedLcy$^v^zXyoxyXQ_BbAJIRYwi%KiGGlD^ry+-N@AIwpP%EhOAUK",
-      "id": "f2c8726a-773e-403c-ad76-37dad93c9a8c"
+      "id": "f2c8726a-773e-403c-ad76-37dad93c9a8c",
+      "events": [
+        {
+          "id": 843739,
+          "title": "Play tennis",
+          "category": "Sport",
+          "description": "with Cuki",
+          "date": "2017-12-21T22:00:00.000Z",
+          "creatorId": "6a5b97c1-a762-406b-8d62-b2c4d579876f",
+          "users": [
+            "f2c8726a-773e-403c-ad76-37dad93c9a8c",
+            "6a5b97c1-a762-406b-8d62-b2c4d579876f"
+          ]
+        }
+      ]
     },
     {
       "username": "Cuki2",
@@ -78,6 +56,58 @@
       "usernameLower": "cuki3",
       "authKey": "undefined&a*=xajP_XX&NIPuGIJIgcTfFWlZ&#BdA*zD*@TUUvNc^TmOfw(",
       "id": "22402c86-f18e-4689-9fc3-237205fad856"
+    },
+    {
+      "username": "Didexe",
+      "passHash": "e3ea13dbb8d11137b17c4bdb3ba336609924709368a85b0363d1f2c8bee63627",
+      "usernameLower": "didexe",
+      "authKey": "undefinedoBbhIQKW#l#+cvfOycH%YcTJz*%gh)_oqhXo%dr*LLWrfrsr&Vv",
+      "id": "6a5b97c1-a762-406b-8d62-b2c4d579876f",
+      "events": [
+        {
+          "id": 843336,
+          "title": "Go to movie",
+          "category": "Cinema",
+          "description": "Ghost in the shell",
+          "date": null,
+          "creatorId": "6a5b97c1-a762-406b-8d62-b2c4d579876f",
+          "users": [
+            "6a5b97c1-a762-406b-8d62-b2c4d579876f"
+          ]
+        },
+        {
+          "id": 843739,
+          "title": "Play tennis",
+          "category": "Sport",
+          "description": "with Cuki",
+          "date": "2017-12-21T22:00:00.000Z",
+          "creatorId": "6a5b97c1-a762-406b-8d62-b2c4d579876f",
+          "users": [
+            "f2c8726a-773e-403c-ad76-37dad93c9a8c",
+            "6a5b97c1-a762-406b-8d62-b2c4d579876f"
+          ]
+        }
+      ],
+      "todos": [
+        {
+          "id": 675816,
+          "text": "Finish Homework",
+          "state": false,
+          "category": "Academy"
+        },
+        {
+          "id": 540266,
+          "text": "Eat",
+          "state": true,
+          "category": "Home"
+        },
+        {
+          "id": 721090,
+          "text": "Sleep",
+          "state": false,
+          "category": "Home"
+        }
+      ]
     }
   ]
 }
